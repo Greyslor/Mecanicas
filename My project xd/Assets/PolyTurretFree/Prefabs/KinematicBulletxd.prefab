@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3197526210200166097}
-  - component: {fileID: 3380237374355717473}
   - component: {fileID: 7979327995984974330}
+  - component: {fileID: 5906667015328397781}
+  - component: {fileID: 4943780502803882618}
+  - component: {fileID: 6570797064997871497}
   m_Layer: 0
   m_Name: KinematicBulletxd
   m_TagString: Untagged
@@ -34,20 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3380237374355717473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3194673473665302405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb37a1452ed8434f9ce4e430bc6549e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  P0: {x: 5, y: 0, z: 0}
-  V0: {x: 5, y: 0, z: 0}
 --- !u!96 &7979327995984974330
 TrailRenderer:
   serializedVersion: 2
@@ -156,6 +144,50 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!54 &5906667015328397781
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194673473665302405}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!135 &4943780502803882618
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194673473665302405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.10250744
+  m_Center: {x: -0.0062136203, y: -0.01064004, z: 0.29728702}
+--- !u!114 &6570797064997871497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194673473665302405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c34933a18c327a4093906096fa3f9a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrierLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &3194877769850305639
 GameObject:
   m_ObjectHideFlags: 0
