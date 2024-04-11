@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Barrier
   - Limit
+  - Ramp
+  - BowLimit
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - Barrier
   - Bowl
-  - 
-  - 
+  - CameraBarrier
+  - Player
   - 
   - 
   - 
