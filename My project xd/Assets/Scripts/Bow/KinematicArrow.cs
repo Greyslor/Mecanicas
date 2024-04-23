@@ -9,28 +9,28 @@ public class KinematicArrow : MonoBehaviour
     public Transform shootPoint;
     float time;
     // Start is called before the first frame update
-    void Start()
+   /* void Start()
     {
         fired = false;
         GetComponent<TrailRenderer>().Clear();
         GetComponent<TrailRenderer>().emitting = false;
         
-    }
+    }*/
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (fired) 
         {
-            time += Time.deltaTime;
+            time += Time.fixedDeltaTime;
             transform.position = ArrowPosition();
-            transform.forward = ArrowVelocity();
+            //transform.forward = ArrowVelocity();
         }
-        else
-        {
-            transform.position = shootPoint.position;
-            transform.rotation = shootPoint.rotation;
-        }
+        //else
+        //{
+          //  transform.position = shootPoint.position;
+            //transform.rotation = shootPoint.rotation;
+        //}
         
     }
 
