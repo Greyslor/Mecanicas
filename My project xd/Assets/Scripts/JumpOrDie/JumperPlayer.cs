@@ -6,6 +6,7 @@ public class JumperPlayer : MonoBehaviour
 {
     [Range(0, 20)] public float jumpImpulse;
     [Range(-20, -1)] public float gravity;
+    public KeyCode keyCode;
     private bool grounded;
     private Rigidbody rb;
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class JumperPlayer : MonoBehaviour
     void Update()
     {
         Physics.gravity = new Vector3(0, gravity, 0);
-        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        if (grounded && Input.GetKeyDown(keyCode))
             rb.AddForce(jumpImpulse * transform.up, ForceMode.Impulse);
     }
 
