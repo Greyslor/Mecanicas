@@ -9,6 +9,7 @@ TagManager:
   - Ramp
   - BowLimit
   - Ground
+  - FoosBallPlayer
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Bowl
   - CameraBarrier
   - Player
-  - 
+  - PlayerBarrier
   - 
   - 
   - 
